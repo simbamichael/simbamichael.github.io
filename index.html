@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#e7e9e4">
+  <meta name="description" content="Michael Simba. Growth, communications, business development and partnerships. Selected work across fintech, payments, media and consumer brands.">
+  <meta property="og:title" content="Michael Simba | Growth, Communications & Partnerships">
+  <meta property="og:description" content="Clear stories. Strong connections. Real growth. Explore my work across African markets.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://simbamichael.github.io">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <title>Michael Simba | Growth, Communications & Partnerships</title>
+</head>
+<body>
+  <a href="#main" class="skip">Skip to portfolio</a>
+  <header class="menubar">
+    <button class="brand" data-route="home" aria-label="Michael Simba, overview"><span class="brand-symbol">m<span>s</span>.</span><span class="brand-name">MICHAEL SIMBA</span></button>
+    <span class="menubar-divider"></span><span class="current-app">Portfolio</span>
+    <div class="menu-spacer"></div>
+    <button class="search-button" id="search-open" aria-label="Search portfolio"><span data-icon="search"></span><span>Find something</span><kbd>⌘ K</kbd></button>
+    <span class="location"><span class="live-dot"></span>Nairobi, KE</span><time id="clock"></time>
+  </header>
+
+  <div class="desktop" id="desktop">
+    <div class="wallpaper" aria-hidden="true"><div class="wallpaper-orbit"></div><span class="wallpaper-word">SIMBA</span><div class="wallpaper-caption">THINK CLEARLY.<br>BUILD RELATIONSHIPS.<br>MAKE IT HAPPEN.</div></div>
+    <div class="desktop-files" aria-label="Desktop shortcuts">
+      <button data-route="work"><span class="file-icon blue" data-icon="folder"></span><span>Selected work</span></button>
+      <button data-route="impact"><span class="file-icon yellow" data-icon="chart"></span><span>The highlights</span></button>
+      <a href="Michael_Simba_Resume.pdf" download="Michael_Simba_Resume.pdf"><span class="file-icon paper" data-icon="document"></span><span>My CV.pdf</span></a>
+    </div>
+    <section class="app-window" id="app-window" aria-label="Michael Simba portfolio">
+      <div class="window-titlebar" id="window-handle">
+        <div class="window-controls"><button class="control close" id="close-window" aria-label="Close portfolio window" title="Close window"></button><button class="control minimize" id="minimize-window" aria-label="Minimize portfolio window" title="Minimize window"></button><button class="control expand" id="expand-window" aria-label="Expand portfolio window" title="Expand window"></button></div>
+        <div class="window-path"><span class="path-root">Michael Simba</span><span>/</span><span id="window-name">Overview</span></div>
+        <button class="titlebar-home" data-route="home" aria-label="Back to overview" data-icon="home"></button>
+      </div>
+      <div class="window-body">
+        <aside class="sidebar">
+          <div class="sidebar-heading">THE PORTFOLIO</div>
+          <nav id="side-nav" aria-label="Portfolio sections"></nav>
+          <div class="sidebar-note"><span class="note-marker"></span><p>Good growth<br>starts with trust.</p><span>My guiding principle</span></div>
+          <a class="sidebar-cv" href="Michael_Simba_Resume.pdf" download="Michael_Simba_Resume.pdf"><span data-icon="download"></span>Download CV<span class="file-type">PDF</span></a>
+          <div class="sidebar-footer">Built on real work.<br>Always learning.</div>
+        </aside>
+        <main id="main" tabindex="-1"></main>
+      </div>
+      <footer class="window-status"><span><span class="live-dot"></span>Growth, with purpose.</span><span id="page-status">An introduction</span></footer>
+    </section>
+    <button class="restore-window" id="restore-window" hidden><span class="brand-symbol">ms.</span><span>Open my portfolio <span aria-hidden="true">↗</span></span></button>
+  </div>
+
+  <nav class="dock" id="dock" aria-label="Quick navigation"></nav>
+  <div class="desktop-footnote">A little strategy. A lot of doing.</div>
+  <dialog id="search-dialog" class="search-dialog" aria-labelledby="search-title"><div class="search-top"><span data-icon="search"></span><label class="sr-only" id="search-title" for="search-input">Search portfolio</label><input id="search-input" placeholder="Find a project, skill or company…" autocomplete="off"><button id="search-close" aria-label="Close search">Esc</button></div><div id="search-results"></div><div class="search-footer">Explore the work behind the titles.</div></dialog>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
